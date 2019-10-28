@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Information</title>
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center">Add New</div>
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="">Username:</label>
+                                <input type="text" class="form-control" id="name" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Profile:</label>
+                                <input type="text" class="form-control" id="profile" placeholder="profile">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Post Image:</label>
+                                <input type="text" class="form-control" id="post" placeholder="Post">
+                            </div>
+                            <button class="btn btn-warning btn-block" type="button">Add New</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8" id="result">
+            
+            </div>
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAqyWmyrTDJfcCr9ZDlDtMcbEH5ci8fcpc",
+    authDomain: "student-ae343.firebaseapp.com",
+    databaseURL: "https://student-ae343.firebaseio.com",
+    projectId: "student-ae343",
+    storageBucket: "student-ae343.appspot.com",
+    messagingSenderId: "475005334130",
+    appId: "1:475005334130:web:f23d720ad37cc4db2b08eb",
+    measurementId: "G-FKZ28BRZ7H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var db = firebase.firestore();
+</script>
+    <script src="js/firebase.js"></script>
+    
+</body>
+</html>
